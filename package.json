@@ -1,10 +1,9 @@
 {
   "name": "twigjsdummy",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp build --production",
+    "dev": "gulp dev"
   },
   "repository": {
     "type": "git",
@@ -12,8 +11,16 @@
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Termonna/twigjsDummy/issues"
+  "homepage": "https://github.com/Termonna/twigjsDummy#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-twig": "^1.2.0",
+    "gulp-typograf": "^4.0.1",
+    "twig": "~1.13.3"
   },
-  "homepage": "https://github.com/Termonna/twigjsDummy#readme"
+  "dependencies": {}
 }
