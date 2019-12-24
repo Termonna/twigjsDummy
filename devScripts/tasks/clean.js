@@ -11,24 +11,14 @@ const del = require('del');
  */
 function clean() {
     return del([
-        config.pages.output,
-        config.styles.output
+        config.pages.output
     ]);
 }
 
-function cleanImages() {
-    return del([config.images.output]);
-}
-
-function cleanFonts() {
-    return del([config.fonts.output]);
-}
 
 clean.displayName = 'Clean';
 clean.description = 'Clean page files';
 
 module.exports = {
-    clean,
-    cleanImages,
-    cleanFonts
+    clean
 };
